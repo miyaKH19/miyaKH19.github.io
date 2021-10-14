@@ -1,251 +1,265 @@
-/* About my style oragnization */
-/* This is organized with 
-** the imported fonts/urls at the top,
-** general style tags are alphabetically ordered, 
-** after that is the input types, 
-** lastly, separated are the class and id tags which are respectively
-alphabetically ordered. */
+/* small screens */
+@media only screen and (max-width: 640px) { 
+    body {
+        font-family: Monaco;
+        background-color: Beige;
+        text-align: center;
+        color:  rgb(58, 38, 18);
+        font-size: 90%;
+    }
+   
+    img{
+        border: 5px solid rgb(96, 63, 29);
+        width: 40%;
+        height: 40%;
+        margin-bottom:5%;
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Berkshire+Swash&display=swap');
-/* https://css-tricks.com/snippets/css/using-font-face/ */
-@font-face {
-    font-family: "Open Sans";
-    font-weight: normal;
-    font-style: normal;
-    src: url("../fonts/Open-Sans/OpenSans-Regular.eot");
-    src: url("../fonts/Open-Sans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Open-Sans/OpenSans-Regular.woff") format("woff"), url("../fonts/Open-Sans/OpenSans-Regular.ttf") format("truetype");
-}
+    div.sec1 img{
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    div.sec1 p{
+        clear: both;
+        padding-top: auto;
+        padding-bottom: 12%;
+    }
 
-body {
-	/* font-family:  'Long Cang', sans-serif; */
-	font-family: courier;
-	font-size: 90%;
-	color: #666;
-	background-color: #55483c;}
-fieldset {
-	width: 310px;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-left: auto;
-	border: 1px solid #d6d6d6;
-	background-color: #fce8e8;
-	line-height: 1.6em;}
+    div.menu{
+        display: none;
+    }
+    div.small-menu {
+        width:5;
+        height:5%;
+        float: right;
+        margin-right: 11%;
+    }
+    div.small-menu img{
+        width:1.5em;
+        height:1.5em;
+        position: fixed;
+        border: 2px solid rgb(96, 63, 29);;
+    
+    }
+    div.brand-header {
+        background-color: rgba(175, 148, 72, 0.363);
+        font-size: 1em;
+        padding-bottom:1.5em;
+    }
+
+    div.brand-header img{
+        width:50px;
+        height: 50px;
+        margin-bottom: -5%;
+        border: none;
+        display: inline-block;
+    }
+    div.brand-header h2{
+        display: inline-block;
+    }
+
+} 
+
+/* Medium screens */
+@media only screen and (min-width: 641px) and (max-width:1024px){ 
+    body {
+        font-family: Monaco;
+        background-color: Beige;
+        text-align: center;
+        color:  rgb(58, 38, 18);
+    }
  
-footer{
-	text-align: center;}
+    img{
+        border: 5px solid rgb(96, 63, 29);
+        width: 100%;
+        height: 100%;
+        margin:5%;
+    }
 
-h4 {
-	text-decoration: bold;
-	font-size: 150%;
+    figure{
+        width:30%;
+        height:30%;
+        display:inline-block;
+        margin: 5%;
+        text-align: center;
+        padding: 0;
+    }
+    figcaption{
+        padding: 1em;
+        margin: auto;
+        font-family: Bradley Hand;
+        font-size: 1.5em;
+
+    }
+   
+    div.sec1 img{
+        clear: both;
+        width: 50%;
+        height: 40%;
+        border: none;
+    }
+    div.sec1 p{
+        vertical-align: middle;
+        margin-bottom: auto;
+        padding-bottom: 12%;
+    }
+
+    div.brand-header {
+        background-color: rgba(175, 148, 72, 0.363);
+        padding: 0.5em;
+        font-size: 1em;
+        text-align: left;
+        clear: right;
+        padding-bottom:1.5em;
+    }
+    
+    div.brand-header img{
+        width:50px;
+        height: 50px;
+        float: left;
+        border: none;
+        margin: auto;
+        padding: 1em;
+    }
+    div.brand-header h2{
+        padding-top: 1.5%;
+    }
+    
+    div.small-menu {
+        display: none;
+    }
+
+} 
+
+/* Large screens */
+@media only screen and (min-width: 1025px) { 
+    body {
+        font-family: Monaco;
+        background-color: Beige;
+        text-align: center;
+        color:  rgb(58, 38, 18);
+        font-size: 110%;
+    }
+    img{
+        border: 5px solid rgb(96, 63, 29);
+        width: 40%;
+        height: 40%;
+        margin:2%;
+        
+    }
+
+    figure{
+        width:20%;
+        height:20%;
+        display:inline-block;
+        margin: 3%;
+        text-align: center;
+        padding: 0;
+    }
+
+    figcaption{
+        padding: 1em;
+        margin: auto;
+        font-family: Bradley Hand;
+        font-size: 1.2em;
+    }
+
+    div.sec1{
+        align-items: center;
+        display: flex;
+        margin-bottom: 5%;
+    }
+    div.sec1 img{
+        float: left;
+        clear: right;
+        margin-left: 13%;
+        margin-right: 5%;
+        border: none;
+    }
+    div.sec1 p{
+        float: left;
+        clear: right;
+        width: 50%;
+    }
+
+    div.sec2{
+        font-size: 1.25em;
+    }
+    div.sec2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    div.brand-header {
+        background-color: rgba(175, 148, 72, 0.363);
+        padding: 0.5em;
+        font-size: 1em;
+        text-align: left;
+        clear: right;
+        padding-bottom:1.5em;
+    }
+    
+    div.brand-header img{
+        width:50px;
+        height: 50px;
+        float: left;
+        border: none;
+        vertical-align: middle;
+        position: relative;
+    }    
+    div.brand-header h2{
+        padding-top: 1.5%;
+    }
+    div.small-menu {
+        display: none;
+    }
+
+
+} 
+
+/******* General SCSS Styling *******/
+h1{
+    text-align: center;
+    margin-bottom: 5%;
 }
 
-iframe, .loc{
-	width: 400px;
-	height: 280px;
-	margin: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
+div a{
+    padding: 2em;
 }
 
-legend {
-	font-style: italic;
-	color: #666666;}
-li {
-	list-style-image: url("images/icon-plus.png");
-	line-height: 1.6em;}
+div.con {
+    background-color: rgba(175, 148, 72, 0.363);
+    padding: 2%;
+}
 
-table {
-	border-spacing: 0px;}
-th, td {
-	padding: 5px 30px 5px 10px;
-	border-spacing: 0px;
-	font-size: 90%;
-	margin: 0px;}
-th, td {
-    text-align: left;
-    background-color: #f0e0e8;
-    border-top: 1px solid #f1f8fe;
-    border-bottom: 1px solid #d8cbcf;
-    border-right: 1px solid #d8cbcf;}
-tr.head th {
-	color: #fff;
-    background-color: #d690ab;
-    border-bottom: 2px solid #a0547a;
-    border-right: 1px solid #be749f;
-    border-top: 1px solid #d690b3;
-	text-align: center;
-	text-shadow: -1px -1px 1px #666666;
-	letter-spacing: 0.15em;}
-td {
-	text-shadow: 1px 1px 1px #ffffff;}
-tr.even td, tr.even th {
-	background-color: #f5e8ee;}
-tr.head th:first-child {
-	-webkit-border-top-left-radius: 5px;
-	-moz-border-radius-topleft: 5px;
-	border-top-left-radius: 5px;}
-tr.head th:last-child {
-	-webkit-border-top-right-radius: 5px;
-	-moz-border-radius-topright: 5px;
-	border-top-right-radius: 5px;}
+div.menu{
+    background-color: rgba(135, 113, 54, 0.363);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: auto;
+}
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;}
+div.sec2{
+    border-top: 3px solid black;
+    clear:both;
+    padding-top: 2%;
 
-ul li {
-	display: inline;
-	padding: 10px;
-	float: right;}
+}
 
-li a, 
-ul a :hover, 
-ul li a:focus, 
-ul li a:active {
+#social{
+    float: center;
     border: none;
-    text-decoration: none;
-	color: inherit;}
-
-video{
-	width: 940px;
+    width: 3%;
+    height: 3%;
 }
-            
-input[type="text"] {
-	width: 120px;
-	border: 1px solid #d6d6d6;
-	padding: 2px;
-	outline: none;}
-input[type="text"]:focus,
-input[type="text"]:hover {
-	background-color: #d0e2f0;
-	border: 1px solid #999999;}
-input[type="submit"] {
-	border: 1px solid #006633;
-	background-color: #009966;
-	color: #ffffff;
-	border-radius: 5px;
-	padding: 5px;
-	margin-top: 10px;}
-input[type="submit"]:hover {
-	border: 1px solid #006633;
-	background-color: #00CC33;
-	color: #ffffff;
-	cursor: pointer;}
 
-/* IDs */
-#in {
-	color: rgb(255, 255, 255);
-}
-#page {
-	max-width: 940px;
-	min-width: 720px;
-	margin: 10px auto 10px auto;
-	
-	border: 4px  #000;
-	background-color: #f6f4e8;
-	vertical-align: baseline;}
-
-
-/* CLASSES */
-.center-mid-1{
-	width: 940px;
-	background-color: #BEB594;
-	padding-bottom: 15px;
-	padding-top: 5px;}
-
-.center-mid-2{
-		width: 940px;
-		background-color: #efeae6;
-		padding-bottom: 15px;
-		padding-top: 5px;}
-
-.center-mid-3{
-	width: 940px;
-	background-color: #d8cec4;
-	padding-bottom: 15px;
-	padding-top: 5px;
-	/* margin-right: auto;
-	margin-left: auto; */
-	}
-.center-2{
-	width: 940px;
-	margin: auto;
-	padding-bottom: 15px;
-	padding-top: 5px;}
-
-.center-3{
-	width: 300px;
-	margin: 0 0;}
-
-.center-text {
-	text-align: center;
-	}
-.center-2>h1, .center-2>p{
-	text-align: center;}
-.img-1{
-	margin: auto;
-	width: 100%;}
-.img-2{
-	/* margin: auto; */
-	margin-left:auto;
-	margin-right: auto;
-	padding-left: 5px;
-	height: 200px;
-	width: 200px;
-	/* width: 30%; */
-}
-.img-3 {
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	height: 400px;
-	width: 400px;
-}
-.img-main{
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 40px;
-	width : 900px;
-	 height : 600px;
-}
-.smlogo{
-    height: 21.3px;
-    width: 17px;
-    margin: auto;}
-
-.submit {
-	width: 310px;
-	text-align: right;
-	margin-right:auto;
-	margin-left:auto;}
-.title {
-	float: left;
-	width: 160px;
-	clear: left;}
-
-
-
-/* These two tags are grouped together since separating them
-causes things to disappear on the page (unknown error) */
-h1.center-text
-{
-	font-family: 'Berkshire Swash', serif;
-	font-size: 550%;
-}}/* i have no idea why this makes things disappear, if not included */
-
-.menu-holder {
-   float: right;
-   max-width: 80%;
-   position: fixed;
-   text-align: center;
-   height: 100%;
-   background-color: #ffffff;
-   right: -100%;
-   top: 0;
-   transition: right .3s ease;
-   width: 100%;
-   overflow: auto;
-   max-width: 100%;
-   z-index: 99;}     
-/* here */
+/* Link Management */
+a:link{
+    color: rgb(83, 52, 27);}
+a:visited{
+    color: rgb(150, 94, 48);}
+a:hover{
+    color: rgb(255, 154, 151);}
+a {
+    text-decoration: none;}

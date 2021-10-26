@@ -1,259 +1,344 @@
+/* image sources:
+https://inspirationfeed.com/aesthetic-note-taking/
+https://www.jetpens.com/Tombow-Mono-Smart-Eraser/pd/23552
+https://bingostationery.com/products/muji-style-gel-pens-set-of-12
+https://minihug.online/products/kuru-toga-automatic-lead-rotation-mechanical-pencil?variant=37350618693790
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fstaedtler.northamerica%2Fphotos%2Fcheck-out-our-new-double-ended-fiber-tip-markers-jissaletters-made-swatches-usin%2F1221966024615117%2F&psig=AOvVaw1TFqYVvkFArO-WfgTtBRwj&ust=1635217857442000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCPCvk67L5PMCFQAAAAAdAAAAABAb
+https://www.google.com/url?sa=i&url=https%3A%2F%2Femmastudies.com%2Fpost%2F142784112250%2Fnotes-with-staedtler-triplus-fineliners-and-an-arc&psig=AOvVaw1TFqYVvkFArO-WfgTtBRwj&ust=1635217857442000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCPCvk67L5PMCFQAAAAAdAAAAABAT
+https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.doodlecraftblog.com%2F2018%2F11%2Ftombow-dual-brush-pens-12-new-colors-in.html&psig=AOvVaw0B3ssX4806lBgTua4-MVEM&ust=1635217710577000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCG3P_L5PMCFQAAAAAdAAAAABAD
+*/
+
 /* small screens */
 @media only screen and (max-width: 640px) { 
     body {
-        font-family: Monaco;
-        background-color: Beige;
+        font-family: Gill Sans;
+        background-color: rgb(217, 240, 255);
         text-align: center;
         color:  rgb(58, 38, 18);
         font-size: 90%;
     }
-   
-    img{
-        border: 5px solid rgb(96, 63, 29);
-        width: 40%;
-        height: 40%;
-        margin-bottom:5%;
+    h1{
+        margin-left:auto;
+        margin-right:auto;
+        float: center;
     }
 
-    div.sec1 img{
+    div.carousel-caption {
+        background-color: rgba(255, 255, 255, 0.352) !important;
+        /* opacity: 0.3; */
+        width: 30%;
+        height: 30%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    div.card{
+        float: center;
+        width: 18rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+
+    }
+    div.card img{
+        object-fit: cover;
         width: 100%;
         height: 100%;
-        border: none;
+        /* width: 18rem; */
     }
-    div.sec1 p{
-        clear: both;
-        padding-top: auto;
-        padding-bottom: 12%;
+    div.carousel-item img{
+        width: 30%;
+        height:30%;
+        margin: auto;
     }
 
-    div.menu{
-        display: none;
+    div.con{
+        background-color: rgb(163, 214, 249);
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
-    div.small-menu {
-        width:5;
-        height:5%;
-        float: right;
-        margin-right: 11%;
+    div.header{
+        background-color: rgb(141, 210, 255);
+        padding: 1%;
+        margin-bottom: 2em;
     }
-    div.small-menu img{
-        width:1.5em;
-        height:1.5em;
-        position: fixed;
-        border: 2px solid rgb(96, 63, 29);;
+
+    div.intro h3{
+        /* margin-bottom: 2rem; */
+        padding-bottom: 6rem;
+    }
+
+    div.mainCards{
+        margin-bottom: 10%;
+    }
+    div.mb-3{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        /* float: right; */
+    }
+    div.row {
+        margin: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    div#gallery{
+        margin-bottom: 20%;
+        background-color: rgb(163, 214, 249);
+        padding-top: 3%;
+        padding-bottom: 3%;
+
+    }
+
+
     
+    div#sign-in{
+        margin-top: -5.5em;
     }
-    div.brand-header {
-        background-color: rgba(175, 148, 72, 0.363);
-        font-size: 1em;
-        padding-bottom:1.5em;
-    }
+   
 
-    div.brand-header img{
-        width:50px;
-        height: 50px;
-        margin-bottom: -5%;
-        border: none;
-        display: inline-block;
-    }
-    div.brand-header h2{
-        display: inline-block;
-    }
 
+    div#menu-mob{
+        /* float:left; */
+        position: absolute;
+        overflow: visible;
+        /* display:none; */
+    }
+    div#menu-larger{
+        display:none;
+    }
+    img#social{
+        width: 2em;
+        height: 2em;
+    }
 } 
 
 /* Medium screens */
 @media only screen and (min-width: 641px) and (max-width:1024px){ 
     body {
-        font-family: Monaco;
-        background-color: Beige;
+        font-family: Gill Sans;
+        /* background-color: rgb(255, 226, 217); */
+        background-color: rgb(217, 240, 255);
         text-align: center;
         color:  rgb(58, 38, 18);
+        font-size: 90%;
     }
- 
-    img{
-        border: 5px solid rgb(96, 63, 29);
+    h1{
+        margin-left:auto;
+        margin-right:auto;
+        float: center;
+    }
+
+    div.carousel-caption {
+        background-color: rgba(255, 255, 255, 0.352) !important;
+        /* opacity: 0.3; */
+        width: 30%;
+        height: 30%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    div.card{
+        float: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        width: 18rem;
+    }
+    div.card img{
+        object-fit: cover;
         width: 100%;
         height: 100%;
-        margin:5%;
     }
 
-    figure{
-        width:30%;
+    div.carousel-indicators{
+        padding-top: 100%;
+    }
+
+    div.carousel-item img{
+        width: 30%;
         height:30%;
-        display:inline-block;
-        margin: 5%;
-        text-align: center;
-        padding: 0;
-    }
-    figcaption{
-        padding: 1em;
         margin: auto;
-        font-family: Bradley Hand;
-        font-size: 1.5em;
-
-    }
-   
-    div.sec1 img{
-        clear: both;
-        width: 50%;
-        height: 40%;
-        border: none;
-    }
-    div.sec1 p{
-        vertical-align: middle;
-        margin-bottom: auto;
-        padding-bottom: 12%;
     }
 
-    div.brand-header {
-        background-color: rgba(175, 148, 72, 0.363);
-        padding: 0.5em;
-        font-size: 1em;
-        text-align: left;
-        clear: right;
-        padding-bottom:1.5em;
+    div.col-md-6{
+        margin-top: 5%;
     }
     
-    div.brand-header img{
-        width:50px;
-        height: 50px;
-        float: left;
-        border: none;
-        margin: auto;
-        padding: 1em;
+    div.col-lg-4{
+        margin-top: 5%;
     }
-    div.brand-header h2{
-        padding-top: 1.5%;
+
+    div.con{
+        background-color: rgb(163, 214, 249);
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
-    
-    div.small-menu {
-        display: none;
+    div.header{
+        background-color: rgb(141, 210, 255);
+        padding: 1%;
+        margin-bottom: 2em;
     }
+
+    div.intro h3{
+        /* margin-bottom: 2rem; */
+        padding-bottom: 4rem;
+    }
+
+    div.mainCards{
+        margin-bottom: 10%;
+    }
+    div.mb-3{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        /* float: right; */
+    }
+    div.row {
+        margin: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    div#gallery{
+        margin-bottom: 6em;
+        background-color: rgb(163, 214, 249);
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    div#menu-mob{
+        float:left;
+        display:none;
+    }
+    div#sign-in{
+        margin-top: -5.5em;
+    }
+    div#sign-in h3{
+        margin-bottom: -1em;
+    }
+    img#social{
+        width: 2em;
+        height: 2em;
+    }
+
+  
 
 } 
 
 /* Large screens */
-@media only screen and (min-width: 1025px) { 
+@media only screen and (min-width: 1025px) {
     body {
-        font-family: Monaco;
-        background-color: Beige;
+        font-family: Gill Sans;
+        background-color: rgb(217, 240, 255);
         text-align: center;
         color:  rgb(58, 38, 18);
-        font-size: 110%;
+        font-size: 90%;
     }
-    img{
-        border: 5px solid rgb(96, 63, 29);
-        width: 40%;
-        height: 40%;
-        margin:2%;
-        
+    h1{
+        margin-left:auto;
+        margin-right:auto;
+        float: center;
     }
 
-    figure{
-        width:20%;
-        height:20%;
-        display:inline-block;
-        margin: 3%;
-        text-align: center;
-        padding: 0;
+    div#gallery h3 {
+        margin-bottom: 2em;
     }
 
-    figcaption{
-        padding: 1em;
-        margin: auto;
-        font-family: Bradley Hand;
-        font-size: 1.2em;
+    div.carousel-caption {
+        background-color: rgba(255, 255, 255, 0.352) !important;
+        /* opacity: 0.3; */
+        width: 30%;
+        height: 30%;
+        margin-right: auto;
+        margin-left: auto;
     }
-
-    div.sec1{
-        align-items: center;
-        display: flex;
-        margin-bottom: 5%;
+    
+    div.card{
+        float: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: 10%; */
+        width: 18rem;
     }
-    div.sec1 img{
-        float: left;
-        clear: right;
-        margin-left: 13%;
-        margin-right: 5%;
-        border: none;
-    }
-    div.sec1 p{
-        float: left;
-        clear: right;
-        width: 50%;
-    }
-
-    div.sec2{
-        font-size: 1.25em;
-    }
-    div.sec2 img{
+    div.card img{
+        object-fit: cover;
         width: 100%;
         height: 100%;
     }
+    div.carousel-item img{
+        width: 30%;
+        height:30%;
+        margin: auto;
+    }
 
-    div.brand-header {
-        background-color: rgba(175, 148, 72, 0.363);
-        padding: 0.5em;
-        font-size: 1em;
-        text-align: left;
-        clear: right;
-        padding-bottom:1.5em;
+    div.col-md-6{
+        margin-top: 5%;
     }
     
-    div.brand-header img{
-        width:50px;
-        height: 50px;
-        float: left;
-        border: none;
-        vertical-align: middle;
-        position: relative;
-    }    
-    div.brand-header h2{
-        padding-top: 1.5%;
-    }
-    div.small-menu {
-        display: none;
+    div.col-lg-4{
+        margin-top: 5%;
     }
 
+    div.con{
+        background-color: rgb(163, 214, 249);
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    div.header{
+        background-color: rgb(141, 210, 255);
+        padding: 1%;
+        margin-bottom: 2em;
+    }
 
-} 
+    div.mainCards{
+        margin-bottom: 10%;
+    }
+    div.mb-3{
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        /* float: right; */
+    }
+    div.row {
+        margin: 10%;
+        margin-top: 5%;
+        /* margin-bottom: 5%; */
+    }
 
-/******* General SCSS Styling *******/
-h1{
-    text-align: center;
-    margin-bottom: 5%;
+    div#gallery{
+        margin-bottom: 10%;
+        background-color: rgb(163, 214, 249);
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    div#menu-mob{
+        float:left;
+        display:none;
+    }
+    div#sign-in{
+        margin-top: -5.5em;
+    }
+    img#social{
+        width: 2em;
+        height: 2em;
+    }
+
+    
 }
 
-div a{
-    padding: 2em;
-}
 
-div.con {
-    background-color: rgba(175, 148, 72, 0.363);
-    padding: 2%;
-}
-
-div.menu{
-    background-color: rgba(135, 113, 54, 0.363);
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin: auto;
-}
-
-div.sec2{
-    border-top: 3px solid black;
-    clear:both;
-    padding-top: 2%;
+div.intro h3{
+    margin-top: 5rem;
+    margin-bottom: -5rem;
 
 }
-
 #social{
     float: center;
     border: none;
     width: 3%;
     height: 3%;
 }
-
 /* Link Management */
 a:link{
     color: rgb(83, 52, 27);}
@@ -263,3 +348,11 @@ a:hover{
     color: rgb(255, 154, 151);}
 a {
     text-decoration: none;}
+
+a.btn, button.btn {
+    color: white;
+    background-color: rgb(112, 181, 255);
+    border-color: rgb(112, 181, 255);
+    
+}
+

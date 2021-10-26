@@ -1,108 +1,251 @@
-<!DOCTYPE html>
-<!-- inspiration from: https://livheart.com/product/series/aquamie/ -->
+<!-- used template from: https://getbootstrap.com/docs/5.1/getting-started/introduction/#starter-template -->
 
-<html lang = "en">
-    <head>
-        <title>PlushCo.</title>
-        <!-- External CSS -->
-        <link href = "style.css" type = "text/css" rel = "stylesheet" />
-        <meta name = "description" content = "plush collection">
-    </head>
-    <body>
-        <div class = "brand-header">
-            <!-- https://www.flaticon.com/premium-icon/kitty_2215520?term=cute%20cat&page=1&position=16&page=1&position=16&related_id=2215520&origin=search -->
-            <img src = "img/icon.png">
-            <h2>PlushCo.</h2>   
-            
+<!-- 
+    Objectives:
+    - implement a container, row, and column structure
+    - use: 
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- STYLESHEET -->
+    <link href = "style.css" type = "text/css" rel = "stylesheet" />
+
+    <title>DIY Projects</title>
+  </head>
+  <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <div class = "header">
+        <h3>Studysthetics</h3>
+        <!-- nav -->
+        <div id = "menu-mob">
+
+            <!--drop down menu template from site -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menu
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Home</a></li>
+                  <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                  <li><a class="dropdown-item" href="#sign-in">Sign In</a></li>
+                  <li><a class="dropdown-item" href="#con">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id = "menu-larger">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sign-in">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#con">Contact</a>
+                </li>
+            </ul>
         </div>
         
-        <!-- medium and large device menu -->
-        <div class = "menu">
-            <a href= "index.html">Leaderboard</a>
-            <a href= "index.html">Recommendations</a>
-            <a href= "index.html">Gallery</a>
-            <a href= "index.html">Membership</a>
-            <a href= "index.html">Contact</a>
-        </div>
+    </div>
 
-        <!-- small device menu -->
-        <div class = "small-menu">
-            <img src = "img/hamburgermenu.png">
-        </div>
-        <div class = "welcome">
-            <h1>Welcome!</h1>
-        </div>
+    <!-- <h1 id = "pagename"> DIY Projects</h1> -->
+    
+    <div class = "intro">
+        <h2>Want to take aesthetically pleasing notes?</h2>
+        <p>Welcome! Feeling frustrated studying with messy notes? On our page, learn about the perfect stationaries
+            to better enhance your studying experience. 
+        </p>    
+        <h3>Here are some of our recommended supplies!</h3>
+    </div>
 
-        <!-- welcoming statement/about us -->
-        <div class = "sec1">    
-            <!-- https://cuteplushies.net/products/corgi-plush -->
-            <img src = "img/main.jpeg" alt = "shop photo" width = "641" height ="380">
-            <p>All aboard the train of all things soft and adorable. <br> <br>
-               Welcome new, old, and prospecting members to our plushy community. 
-               Here at PlushCo, we strive to facillitate a comfortable environment for
-               people to meet fellow enthusiasts, as well as be able to ask and give
-               recommendations.
-               
-            </p>
-        </div>
+    <div class="mainCards">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+            <!-- <div class="card" style="width: 18rem;"></div> -->
+                <img src="img/muji.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Muji Gel Pens</h5>
+                  <p class="card-text">Muji Gel Pens are perfect for making precise writings. With 0.5mm ends, 
+                      these pens are thin and help prevent the blotting and smudging of ink.  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="img/zebra.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Zebra Mildliner</h5>
+                  <p class="card-text">Zebra Mildliner highlighters are essential for emphasizing
+                      key words in your notes. They also can help populate your notebook with color!.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+                <img src="img/tombow.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tombow Brush Pens</h5>
+                  <p class="card-text">For those seeking a more artistic look, Tombow Brush Pens
+                      are a must. Whether it's for calligraphy or for sprucing up your titles, these pens are
+                    able to fancify and emphasize. </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="img/staed.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Staedlater Pens</h5>
+                  <p class="card-text">The Staedlater Pens are a dependable collection, with nonbendable tips and
+                      consistent inkage.</p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="img/s.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kurutoga Pencils</h5>
+                  <p class="card-text">A personal favorite, the Kurutoga Pencils make a great use of their mechanical compositions.
+                      With the ability to continuously rotate the lead during use, the pencil tip remains sharp and can produce 
+                      dark lines unachievable with dull-tipped pencils.
+                  </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="img/mono.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mono Erasers</h5>
+                  <p class="card-text">Made a mistake? The Mono erasers are the best when it comes to getting rid of the most
+                      troublesome smudges and darkest lines. They do a great job in eradicating the blemishes from your notes.
+                    </p>
+                  <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+          </div>
+        </div>  <!-- end row -->
 
-        <div class = "sec2">
-            <h3>Here are some of our favorites!</h3>
-            <figure>
-                <!-- https://anirollz.com/products/anirollz-small-6-blanket-plush?variant=40302881702072 -->
-                <img src = "img/anirollz.jpeg">
-                <figcaption>Anirollz</figcaption>
-            </figure>
-            <figure>
-                <!-- https://bellzi.com/products/narrzi-teal  -->
-                <img src = "img/bellzi.jpeg">
-                <figcaption>Bellzi</figcaption>
-            </figure>
-            <figure>
-                <!-- https://otakumode.com/shop/55fb8b01e74c75761a329312 #tokyootakumode #plushie  -->
-                <img src = "img/chuken-mochi-shiba.jpg">
-                <figcaption>Chuken</figcaption>
-            </figure>
-            <figure>
-                <!-- https://otakumode.com/shop/5a0e8877e72417096fbeec31 #tokyootakumode #plushie -->
-                <img src = "img/coronya.jpg">
-                <figcaption>Coronya</figcaption>
-            </figure>
-            <figure>
-                <!-- https://www.jellycat.com/us/amuseable-watermelon/ -->
-                <img src = "img/jellycat-watermelon.jpg">
-                <figcaption>Jellycat</figcaption>
-            </figure>
-            <figure>
-                <!-- https://www.amazon.com/dp/B07W1P9M8G/ref=cm_sw_r_tw_dp_816SNEQ7BEM7G9WVRVHV -->
-                <img src = "img/leono-plush.jpg">
-                <figcaption>Leono</figcaption>
-            </figure>
-            <figure>
-                <!-- https://otakumode.com/shop/528b0787804dc9771900004d  -->
-                <img src = "img/sentimental-cicus.jpg">
-                <figcaption>Sentimental Circus</figcaption>
-            </figure>
-            <figure>
-                <!-- https://www.amazon.com/dp/B01N79ISOH/ref=cm_sw_r_tw_dp_YNC0RPYJ8ZQRJSZQMS5P -->
-                <img src = "img/bread.png">
-                <figcaption>Cotton-food</figcaption>
-            </figure>
-        </div>
+        <!-- <div class = "row"></div>  -->
+      </div>
+      <!-- template taken from the website -->
+      <div id = "gallery">
+        
+            <h3>Gallery</h3>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/medicine.jpeg" class="d-block w-60" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Sample Notes</h5>
+                            <p>Swipe to see some examples of the types of notes you can create using our favorite supplies.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cells.jpg" class="d-block w-60" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Using Muji Pens</h5>
+                            <p>Here is an example of the types of notes you can create using Muji Pens.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/beautiful-notes.jpeg" class="d-block w-60" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Using Zebra Mildliners</h5>
+                            <p>Here is an example of the types of notes you can create using Zebra Mildliners.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
 
-        <!-- contact information -->
-        <div class = "con">
-            <p class = "contact"> <b>Contact Us!</b>
-                <br>
-                <br>Phone: <a href = "tel:1-XXX-XXX-XXXX">1-234-567-8910</a>
-                <br>
-                <br>Email:
-                <a href= "mailto:mkhiguch@andrew.cmu.edu"> &lt; Email Us! &gt;</a>
-            </p>
-            <!-- link to socials -->
-            <img id = "social" src = "img/f081.png">
-            <img id = "social" src = "img/f082.png">
-            <img id = "social" src = "img/f083.png">
-        </div>
-    </body>
+      </div>
+
+
+      
+    
+    
+    <div id = "sign-in">
+        <h3>Sign In</h3>
+        <div class = "row">
+            <div class = "col-md-12 col-lg-6">
+                <p>
+                    Sign in for ease of access!
+                    Join our community to get notified for newly released products as well as
+                    updates on which stationaries are on sale.
+                </p>
+                 
+            </div>
+             <div class = "col-md-12 col-lg-6">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Get notifications</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
+             </div>
+         </div>
+    </div>
+     
+    
+     <!-- contact information -->
+     <div id = "con" class = "con">
+         <p class = "contact"> <b>Contact Us!</b>
+             <br>
+             <br>Phone: <a href = "tel:1-XXX-XXX-XXXX">1-234-567-8910</a>
+             <br>
+             <br>Email:
+             <a href= "mailto:mkhiguch@andrew.cmu.edu"> &lt; Email Us! &gt;</a>
+         </p>
+         <!-- link to socials -->
+         <img id = "social" src = "img/f081.png">
+         <img id = "social" src = "img/f082.png">
+         <img id = "social" src = "img/f083.png">
+     </div>
+  </body>
 </html>
